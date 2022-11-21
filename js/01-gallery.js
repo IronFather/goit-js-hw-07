@@ -23,7 +23,7 @@ function createMarkupGallery (arr) {
 }; //1+
 
 const marcupGalleryItems = createMarkupGallery(galleryItems);
-galleryEl.innerHTML = marcupGalleryItems;
+galleryEl.innerHTML = marcupGalleryItems;//1+
 
 
 galleryEl.addEventListener(`click`, onGalleryItemClick); //2+
