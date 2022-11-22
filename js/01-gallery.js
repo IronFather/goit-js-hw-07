@@ -45,11 +45,13 @@ function onGalleryItemClick(e) {
     `);
     modal.show();
     
-    document.addEventListener("keydown", onModalClose);
-
+    document.addEventListener("keydown", onModalClose, {once: true});
+    // console.log(e);
     function onModalClose(e) {
         if ("Escape" === e.code) {
             modal.close();
+
+            // console.log(`Escape`);
         }
     }
 };
